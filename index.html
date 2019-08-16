@@ -4,57 +4,73 @@
     <title>Projeto Seletivo Future4 WFS01</title>
 <style>
     body{
-        background-color:
-        #595F96;
-        font-family:sans-serif
+        font-family:sans-serif 
         }
     h1  {
         color: #ffffff;
         text-align:center;
+        font-size: 50px;
         }
     h2  {
         color:#ffffff;
         text-align:right;
+        margin-right: 30px;
         }
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         }
-    table{
+   /* subtituir pelo CSS display
+      #table{
         border-collapse: collapse;
         width: 100%;
         background-color: #ffffff;
         }
-        th {
-            border: 40px solid #CD4D00;
+        #table th {
+            border: 3vw solid #CD4D00;
+            background-color: #ffffff
             text-align: center;
             overflow: auto;
             padding: 50px;
             color: #CD4D00;
             font-size: 200%
             }
+            */
+    li {
+    display: inline;
+    }
 </style>
 </head>
 <body>
-
+<div style=background-color:#595F96;>
+<br>
 <h1>Projeto Seletivo Future4</h1>
 <img src="future4.jpg" alt="Future4. future, for anyone." style="text-align:center;width:700px;height:317px;">
 <br>
 <h2><em>Turma Web Full Stack 01</em></h2>
 <br>
-<div style="background-color:#ffffff">
-    <table>
+</div>
+<!-- trocar esse trecho HTML por
+    (display:inline-block)
+
+     <div style="overflow-x:auto;">
+    <table id="table">
     <tr>
         <th>HTML</th>
         <th>CSS</th> 
         <th>JavaScript</th>
     </tr>
 </table>
-</div>
+</div> -->
+<ul>
+    <li> <a href="/html/default.asp" target="_blank">HTML</a> </li>
+    <li> <a href="/css/default.asp" target="_blank">CSS</a> </li>
+    <li> <a href="/js/default.asp" target="_blank">JavaScript</a> </li>
+</ul>
 <br>
 <form action="/action_page.php" method="post" target="_self">
-    <input type="text" name="e-mail" value="Coloque aqui o seu e-mail">
+    <input type="text" name="email" value="Coloque aqui o seu e-mail">
     <input type="submit" value="Enviar">
   </form> 
 </body>
