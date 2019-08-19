@@ -21,20 +21,29 @@
         margin-left: auto;
         margin-right: auto;
     }
-    div {
-        max-width: 100%;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        background-color:#cd4d00;
+        width: 100%;
     }
-    .box {
-        display: inline-block;
-        float: left;
-        width: 26.3%;
-        padding: 50px 20px;
+    .container .box {
+        padding: 50px 130px;
         font-family:sans-serif;
+        width: 10%;
         font-size: 30px;
-        background-color:#fff;
+        background-color: #ffffff;
         color:#cd4d00;
-        border: 25px solid #cd4d00;
+        border: 20px solid #cd4d00;
         text-align: center;
+    }
+    input[type=text], input[type=submit] {
+        width: 30%;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px solid black;
     }
 </style>
 </head>
@@ -50,20 +59,23 @@
 <br>
 
 </div>
-<div class="box">
-        HTML
-      </div>
-      <div class="box">
-          CSS
-      </div>
-      <div class="box">
-          Javascript
-      </div>
+<div class="container">
+    <div class="box">
+            HTML
+        </div>
+        <div class="box">
+            CSS
+        </div>
+        <div class="box">
+            Javascript
+        </div>
+</div>
 <br>
-<form action="/action_page.php" method="post" target="_self">
+<div> 
+<form>
     <input type="text" name="email" value="Coloque aqui o seu e-mail">
     <input type="submit" value="Enviar">
-  </form> 
-  
+    </form> 
+</div>  
 </body>
 </html>
