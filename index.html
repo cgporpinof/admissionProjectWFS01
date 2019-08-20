@@ -12,6 +12,7 @@
         font-size: 50px;
     }
     h2  {
+        font-size: 40px;
         color:#ffffff;
         text-align:right;
         margin-right: 30px;
@@ -27,54 +28,97 @@
         align-content: center;
         flex-wrap: wrap;
         background-color:#cd4d00;
-        width: 100%;
-    }
-    .container .box {
-        padding: 50px 130px;
         font-family:sans-serif;
-        width: 10%;
-        font-size: 30px;
-        background-color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
         color:#cd4d00;
-        border: 20px solid #cd4d00;
         text-align: center;
     }
-    input[type=text], input[type=submit] {
-        width: 30%;
+    .box1 {
+        padding: 87px 125px;
+        border-left: 45px solid #cd4d00;
+        border-right: 12px solid #cd4d00;
+        border-top: 45px solid #cd4d00;
+        border-bottom: 55px solid #cd4d00;
+        background-color: #ffffff;
+    }
+    .box2 {
+        padding: 87px 125px;
+        border-left: 12px solid #cd4d00;
+        border-right: 12px solid #cd4d00;
+        border-top: 45px solid #cd4d00;
+        border-bottom: 55px solid #cd4d00;
+        background-color: #ffffff;
+    }
+    .box3 {
+        padding: 87px 105px;
+        border-left: 12px solid #cd4d00;
+        border-right: 45px solid #cd4d00;
+        border-top: 45px solid #cd4d00;
+        border-bottom: 55px solid #cd4d00;
+        background-color: #ffffff;
+    }
+    .formulario {
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-content: center;
         align-items: center;
-        box-sizing: border-box;
+        flex-wrap: wrap;
+        background-color:#D8D8D8;
+    }
+    input[type=text] {
+        height: 60px;
+        width: 550px;
         border: 2px solid black;
+    }
+    input[type=submit] {
+        height: 66px;
+        width: 200px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 1px solid black;
+        cursor: pointer;
+    }
+    .campo {
+        background-color: #ffffff;
+        font: 2.4rem sans-serif;
+        font-weight: bold;
+        color: #6E6E6E;
+        padding-left: 15px;
+    }
+    .botão {
+        background-color: #cd4d00;
+        font: 2.4rem sans-serif;
+        font-weight: bold;
+        color: #ffffff;
     }
 </style>
 </head>
-
 <body>
-
-<div style=background-color:#595F96;>
+<div style=background-color:#595F96; >
 <br>
 <h1>Projeto Seletivo Future4</h1>
 <img src="future4.jpg" alt="Future4. future, for anyone." style="text-align:center;width:700px;height:317px;">
-<br>
 <h2><em>Turma Web Full Stack 01</em></h2>
 <br>
-
-</div>
+    </div>
 <div class="container">
-    <div class="box">
-            HTML
-        </div>
-        <div class="box">
-            CSS
-        </div>
-        <div class="box">
-            Javascript
-        </div>
-</div>
-<br>
+        <div class="box1">
+                HTML
+            </div>
+            <div class="box2">
+                CSS
+            </div>
+            <div class="box3">
+                Javascript
+            </div>
+    </div>
 <div> 
-<form>
-    <input type="text" name="email" value="Coloque aqui o seu e-mail">
-    <input type="submit" value="Enviar">
+    <form class="formulario">
+        <input class="campo" type="text" name="email" value="Coloque aqui o seu e-mail">
+        <input class="botão" type="submit" value="Enviar">
     </form> 
 </div>  
 </body>
